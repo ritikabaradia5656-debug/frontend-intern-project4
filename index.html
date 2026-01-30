@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- Mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>To-Do App</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,17 +14,24 @@
   <div class="app">
     <h1>📝 To-Do App</h1>
 
+    <!-- Input section -->
     <div class="input-box">
-      <input type="text" id="taskInput" placeholder="Add a task..." />
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Add a task..."
+      />
       <button id="addBtn">Add</button>
     </div>
 
+    <!-- Filters -->
     <div class="filters">
       <button data-filter="all">All</button>
       <button data-filter="completed">Completed</button>
       <button data-filter="pending">Pending</button>
     </div>
 
+    <!-- Task list -->
     <ul id="taskList"></ul>
   </div>
 
